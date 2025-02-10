@@ -1,6 +1,6 @@
-package com.adopcion.service;
+package com.adopcion.catpidog.service;
 
-import com.adopcion.model.Mascota;
+import com.adopcion.catpidog.model.Mascota;
 import java.util.List;
 
 public interface MascotaService {

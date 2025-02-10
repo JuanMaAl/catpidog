@@ -1,4 +1,4 @@
-package com.example.adopcion.catpidog;
+package com.adopcion.catpidog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

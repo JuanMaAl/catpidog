@@ -1,7 +1,7 @@
-package com.adopcion.service;
+package com.adopcion.catpidog.service;
 
-import com.adopcion.model.Mascota;
-import com.adopcion.repository.MascotaRepository;
+import com.adopcion.catpidog.model.Mascota;
+import com.adopcion.catpidog.repository.MascotaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

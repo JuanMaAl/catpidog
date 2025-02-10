@@ -1,1 +1,6 @@
-/home/juanmaal/Projects/catpidog/src/main/java/com/example/adopcion/catpidog/CatpidogApplication.java
+/home/juanmaal/Projects/catpidog/src/main/java/com/adopcion/catpidog/CatpidogApplication.java
+/home/juanmaal/Projects/catpidog/src/main/java/com/adopcion/catpidog/controller/MascotaController.java
+/home/juanmaal/Projects/catpidog/src/main/java/com/adopcion/catpidog/model/Mascota.java
+/home/juanmaal/Projects/catpidog/src/main/java/com/adopcion/catpidog/repository/MascotaRepository.java
+/home/juanmaal/Projects/catpidog/src/main/java/com/adopcion/catpidog/service/MascotaService.java
+/home/juanmaal/Projects/catpidog/src/main/java/com/adopcion/catpidog/service/MascotaServiceImpl.java
