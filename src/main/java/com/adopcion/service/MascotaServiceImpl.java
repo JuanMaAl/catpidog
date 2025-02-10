@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class MasctoraServiceImpl implements MascotaService{
+public class MascotaServiceImpl implements MascotaService{
 
 	@Autowired
 	private MascotaRepository mascotaRepository;
@@ -20,6 +20,6 @@ public class MasctoraServiceImpl implements MascotaService{
 	
 	@Override
 	public List<Mascota> findAll() {
-		return mascotaRespository.findAll();
+		return mascotaRepository.findAll();
 	}
 }
