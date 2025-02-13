@@ -29,6 +29,8 @@ public class MascotaServiceImpl implements MascotaService{
 				.map(mascota -> {
 					mascota.setNombre(mascotaActualizada.getNombre());
 					mascota.setEdad(mascotaActualizada.getEdad());
+					mascota.setDisponible(mascotaActualizada.getDisponible());
+					mascota.setTipoMacota(mascotaActualizada.getTipoMascota());
 					return mascotaRepository.save(mascota);
 				})
 				.orElseThrow(() -> new RuntimeException("Mascota no encontrada con id" + id));
