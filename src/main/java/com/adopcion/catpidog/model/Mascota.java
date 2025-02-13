@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
 
 @Entity
 public class Mascota {
@@ -14,6 +16,11 @@ public class Mascota {
 	
 	private String nombre;
 	private int edad;
+	private Boolean disponible; 
+	
+	@ManyToOne
+	@JoinColumn(name = "tipo_mascota_id")
+	private TipoMascota tipoMascota;
 	
 	// Getters and Setters
 	public Long getId() {
@@ -38,5 +45,21 @@ public class Mascota {
 	
 	public void setEdad(int edad) {
 		this.edad = edad;
+	}
+	
+	public Boolean getDisponible() {
+		return disponible;
+	}
+	
+	public void setDisponible(Boolean disponible) {
+		this.disponible = disponible;
+	}
+	
+	public TipoMascota getTipoMascota() {
+		return tipoMascota;
+	}
+	
+	public void setTipoMacota(TipoMascota tipoMascota) {
+		this.tipoMascota = tipoMascota;
 	}
 }
