@@ -33,4 +33,13 @@ public class MascotaServiceImpl implements MascotaService{
 				})
 				.orElseThrow(() -> new RuntimeException("Mascota no encontrada con id" + id));
 	}
+	
+	@Override
+	public boolean delete(Long id) {
+		if (mascotaRepository.existsById(id)) {
+			mascotaRepository.deleteById(id);
+			return true;
+		}
+		return false;
+	}
 }

@@ -38,4 +38,15 @@ public class MascotaController {
 		}
 	}
 	
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Void> eliminarMascota(@PathVariable 
+			Long id) {
+		boolean eliminado = mascotaService.delete(id);
+		if (eliminado) {
+			return ResponseEntity.noContent().build();
+		} else {
+			return ResponseEntity.notFound().build();
+		}
+	}
+	
 }
