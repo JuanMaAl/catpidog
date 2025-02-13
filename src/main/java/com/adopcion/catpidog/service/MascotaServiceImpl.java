@@ -22,4 +22,15 @@ public class MascotaServiceImpl implements MascotaService{
 	public List<Mascota> findAll() {
 		return mascotaRepository.findAll();
 	}
+	
+	@Override
+	public Mascota update(Long id, Mascota mascotaActualizada) {
+		return mascotaRepository.findById(id)
+				.map(mascota -> {
+					mascota.setNombre(mascotaActualizada.getNombre());
+					mascota.setEdad(mascotaActualizada.getEdad());
+					return mascotaRepository.save(mascota);
+				})
+				.orElseThrow(() -> new RuntimeException("Mascota no encontrada con id" + id));
+	}
 }

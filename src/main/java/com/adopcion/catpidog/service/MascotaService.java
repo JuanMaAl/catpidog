@@ -6,4 +6,5 @@ import java.util.List;
 public interface MascotaService {
 	Mascota save(Mascota mascota);
 	List<Mascota> findAll();
+	Mascota update(Long id, Mascota mascotaActualizada);
 }

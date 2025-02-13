@@ -26,4 +26,16 @@ public class MascotaController {
 	public List<Mascota> obtenerMascotas() {
 		return mascotaService.findAll();
 	}
+	
+	@PutMapping("/{id}")
+	public ResponseEntity<Mascota> actualizarMascota(@PathVariable
+			Long id, @RequestBody Mascota mascota) {
+		Mascota mascotaActualizada = mascotaService.update(id, mascota);
+		if (mascotaActualizada != null) {
+			return ResponseEntity.ok(mascotaActualizada);
+		} else {
+			return ResponseEntity.notFound().build();
+		}
+	}
+	
 }
