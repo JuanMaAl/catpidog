@@ -14,6 +14,12 @@ public class TipoMascota {
 	
 	private String nombre;
 	
+	public TipoMascota() {}
+	
+	public TipoMascota(String nombre) {
+		this.nombre = nombre;
+	}
+	
 	// Getters and Setters 
 	public Long getId() {
 		return id;

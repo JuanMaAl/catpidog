@@ -1,7 +1,10 @@
 package com.adopcion.catpidog.service;
 
 import com.adopcion.catpidog.model.Mascota;
+import com.adopcion.catpidog.model.TipoMascota;
 import com.adopcion.catpidog.repository.MascotaRepository;
+import com.adopcion.catpidog.repository.TipoMascotaRepository;
+import com.adopcion.catpidog.dto.MascotaDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +15,9 @@ public class MascotaServiceImpl implements MascotaService{
 
 	@Autowired
 	private MascotaRepository mascotaRepository;
+	
+	@Autowired
+	private TipoMascotaRepository tipoMascotaRepository;
 	
 	@Override
 	public Mascota save(Mascota mascota) {
@@ -30,7 +36,7 @@ public class MascotaServiceImpl implements MascotaService{
 					mascota.setNombre(mascotaActualizada.getNombre());
 					mascota.setEdad(mascotaActualizada.getEdad());
 					mascota.setDisponible(mascotaActualizada.getDisponible());
-					mascota.setTipoMacota(mascotaActualizada.getTipoMascota());
+					mascota.setTipoMascota(mascotaActualizada.getTipoMascota());
 					return mascotaRepository.save(mascota);
 				})
 				.orElseThrow(() -> new RuntimeException("Mascota no encontrada con id" + id));
@@ -43,5 +49,21 @@ public class MascotaServiceImpl implements MascotaService{
 			return true;
 		}
 		return false;
+	}
+	
+	@Override
+	public Mascota crearMascota(MascotaDTO mascotaDTO) {
+		TipoMascota tipoMascota =
+				tipoMascotaRepository.findById(mascotaDTO.getTipoMascotaId())
+				.orElseThrow(() -> new RuntimeException("Tipo de mascota no encontrado con id: " +
+				mascotaDTO.getTipoMascotaId()));
+		
+		Mascota mascota = new Mascota();
+		mascota.setNombre(mascotaDTO.getNombre());
+		mascota.setTipoMascota(tipoMascota);
+		mascota.setEdad(mascotaDTO.getEdad());
+		mascota.setDisponible(mascotaDTO.getDisponible());
+	
+		return mascotaRepository.save(mascota);
 	}
 }

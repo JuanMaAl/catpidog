@@ -59,7 +59,7 @@ public class Mascota {
 		return tipoMascota;
 	}
 	
-	public void setTipoMacota(TipoMascota tipoMascota) {
+	public void setTipoMascota(TipoMascota tipoMascota) {
 		this.tipoMascota = tipoMascota;
 	}
 }
