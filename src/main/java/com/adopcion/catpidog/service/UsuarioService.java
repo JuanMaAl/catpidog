@@ -8,4 +8,5 @@ import com.adopcion.catpidog.model.Usuario;
 public interface UsuarioService {
 	Usuario crearUsuario(UsuarioDTO usuarioDTO);
 	List<Usuario> obtenerTodosLosUsuarios();
+	boolean delete(Long id);
 }

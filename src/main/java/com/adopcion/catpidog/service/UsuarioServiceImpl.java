@@ -28,4 +28,13 @@ public class UsuarioServiceImpl implements UsuarioService {
 	public List<Usuario> obtenerTodosLosUsuarios() {
 		return usuarioRepository.findAll();
 	}
+	
+	@Override
+	public boolean delete(Long id) {
+		if (usuarioRepository.existsById(id)) {
+			usuarioRepository.deleteById(id);
+			return true;
+		}
+		return false;
+	}
 }
