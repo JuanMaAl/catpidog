@@ -1,7 +1,7 @@
 package com.adopcion.catpidog.controller;
 
-import com.adopcion.catpidog.model.Mascota;
 import com.adopcion.catpidog.dto.MascotaDTO;
+import com.adopcion.catpidog.model.Mascota;
 import com.adopcion.catpidog.service.MascotaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

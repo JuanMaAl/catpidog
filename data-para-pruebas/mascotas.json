@@ -1,0 +1,123 @@
+[
+  {
+    "nombre": "Luna",
+    "edad": 3,
+    "disponible": true,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Michi",
+    "edad": 2,
+    "disponible": false,
+    "tipoMascota": { "id": 2 }
+  },
+  {
+    "nombre": "Rocky",
+    "edad": 5,
+    "disponible": true,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Pelusa",
+    "edad": 1,
+    "disponible": true,
+    "tipoMascota": { "id": 3 }
+  },
+  {
+    "nombre": "Max",
+    "edad": 4,
+    "disponible": true,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Nala",
+    "edad": 2,
+    "disponible": true,
+    "tipoMascota": { "id": 2 }
+  },
+  {
+    "nombre": "Toby",
+    "edad": 6,
+    "disponible": false,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Coco",
+    "edad": 1,
+    "disponible": true,
+    "tipoMascota": { "id": 4 }
+  },
+  {
+    "nombre": "Simba",
+    "edad": 3,
+    "disponible": true,
+    "tipoMascota": { "id": 2 }
+  },
+  {
+    "nombre": "Lola",
+    "edad": 2,
+    "disponible": true,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Kiwi",
+    "edad": 1,
+    "disponible": true,
+    "tipoMascota": { "id": 4 }
+  },
+  {
+    "nombre": "Thor",
+    "edad": 4,
+    "disponible": false,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Milo",
+    "edad": 2,
+    "disponible": true,
+    "tipoMascota": { "id": 2 }
+  },
+  {
+    "nombre": "Bella",
+    "edad": 5,
+    "disponible": true,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Oreo",
+    "edad": 1,
+    "disponible": true,
+    "tipoMascota": { "id": 3 }
+  },
+  {
+    "nombre": "Whiskers",
+    "edad": 3,
+    "disponible": false,
+    "tipoMascota": { "id": 2 }
+  },
+  {
+    "nombre": "Charlie",
+    "edad": 4,
+    "disponible": true,
+    "tipoMascota": { "id": 1 }
+  },
+  {
+    "nombre": "Snowball",
+    "edad": 2,
+    "disponible": true,
+    "tipoMascota": { "id": 3 }
+  },
+  {
+    "nombre": "Leo",
+    "edad": 1,
+    "disponible": true,
+    "tipoMascota": { "id": 2 }
+  },
+  {
+    "nombre": "Buddy",
+    "edad": 6,
+    "disponible": false,
+    "tipoMascota": { "id": 1 }
+  }
+]
+

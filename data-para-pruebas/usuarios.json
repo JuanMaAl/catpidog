@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Ana García",
+    "correoElectronico": "ana.garcia@email.com",
+    "telefono": "612345678"
+  },
+  {
+    "nombre": "Carlos Rodríguez",
+    "correoElectronico": "carlos.rodriguez@email.com",
+    "telefono": "623456789"
+  },
+  {
+    "nombre": "María López",
+    "correoElectronico": "maria.lopez@email.com",
+    "telefono": "634567890"
+  },
+  {
+    "nombre": "Diego Pérez",
+    "correoElectronico": "diego.perez@email.com",
+    "telefono": "645678901"
+  }
+]
