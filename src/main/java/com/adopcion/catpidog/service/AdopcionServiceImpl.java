@@ -7,6 +7,9 @@ import com.adopcion.catpidog.model.Usuario;
 import com.adopcion.catpidog.repository.AdopcionRepository;
 import com.adopcion.catpidog.repository.MascotaRepository;
 import com.adopcion.catpidog.repository.UsuarioRepository;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -44,6 +47,11 @@ public class AdopcionServiceImpl implements AdopcionService {
 		mascotaRepository.save(mascota);
 		
 		return adopcionRepository.save(adopcion);
+	}
+	
+	@Override
+	public List<Adopcion> obtenerAdopciones() {
+		return adopcionRepository.findAll();
 	}
 	
 
