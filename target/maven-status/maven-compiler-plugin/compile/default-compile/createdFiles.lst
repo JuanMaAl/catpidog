@@ -1,6 +1,6 @@
 com/adopcion/catpidog/service/MascotaServiceImpl.class
+com/adopcion/catpidog/repository/MascotaRepository.class
 com/adopcion/catpidog/controller/MascotaController.class
 com/adopcion/catpidog/CatpidogApplication.class
 com/adopcion/catpidog/model/Mascota.class
 com/adopcion/catpidog/service/MascotaService.class
-com/adopcion/catpidog/repository/MascotaRepository.class
