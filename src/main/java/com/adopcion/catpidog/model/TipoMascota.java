@@ -13,11 +13,18 @@ public class TipoMascota {
 	private Long id;
 	
 	private String nombre;
+	private String descripcion;
+	private String imageSrc;
+	private String altText;
 	
 	public TipoMascota() {}
 	
-	public TipoMascota(String nombre) {
+	public TipoMascota(String nombre, String descripcion, String imageSrc, String altText) {
 		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.imageSrc = imageSrc;
+		this.altText = altText;
+		
 	}
 	
 	// Getters and Setters 
@@ -35,5 +42,29 @@ public class TipoMascota {
 	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	
+	public String getDescripcion() {
+		return descripcion;
+	}
+	
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	
+	public String getImageSrc() {
+		return imageSrc;
+	}
+	
+	public void setImageSrc(String imageSrc) {
+		this.imageSrc = imageSrc;
+	}
+	
+	public String getAltText() {
+		return altText;
+	}
+	
+	public void setAllText(String altText) {
+		this.altText = altText;
 	}
 }

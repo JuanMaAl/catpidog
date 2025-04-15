@@ -3,6 +3,7 @@ package com.adopcion.catpidog.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -28,6 +29,8 @@ public class SecurityConfig {
 		http
 			.cors(Customizer.withDefaults())
 			.authorizeHttpRequests(authz -> authz
+					   .requestMatchers(HttpMethod.GET, "/api/tipos/**").permitAll() // Permitir solo GET a /api/tiposMascota/
+	                    .requestMatchers(HttpMethod.GET, "/api/mascotas/**").permitAll() 
 					.requestMatchers("/api/**").authenticated()
 					.anyRequest().permitAll()
 					)
