@@ -53,61 +53,61 @@ public class DataInitializer implements CommandLineRunner {
             TipoMascota otrosTipo = tipoMascotaRepository.findByNombre("Otros").orElse(null);
 
             if (perroTipo != null) {
-                mascotaRepository.save(new Mascota("Buddy", 3, true, "Un labrador dorado muy amigable y le encanta jugar.", "/assets/mascotas/perro/buddy.jpg", "Un labrador dorado feliz", perroTipo));
-                mascotaRepository.save(new Mascota("Max", 5, true, "Un pastor alemán atento y protector.", "/assets/mascotas/perro/max.jpg", "Un pastor alemán atento", perroTipo));
-                mascotaRepository.save(new Mascota("Luna", 2, false, "Una beagle juguetona y curiosa, siempre olfateando.", "/assets/mascotas/perro/luna.jpg", "Una beagle juguetona", perroTipo));
+                mascotaRepository.save(new Mascota("Buddy", 3, true, "Un labrador dorado muy amigable y le encanta jugar.", "/assets/mascotas/perro/buddy.png", "Un labrador dorado feliz", perroTipo));
+                mascotaRepository.save(new Mascota("Max", 5, true, "Un pastor alemán atento y protector.", "/assets/mascotas/perro/max.png", "Un pastor alemán atento", perroTipo));
+                mascotaRepository.save(new Mascota("Luna", 2, false, "Una beagle juguetona y curiosa, siempre olfateando.", "/assets/mascotas/perro/luna.png", "Una beagle juguetona", perroTipo));
             }
 
             if (gatoTipo != null) {
-                mascotaRepository.save(new Mascota("Milo", 1, true, "Un siamés elegante y con una personalidad vocal.", "/assets/mascotas/gato/milo.jpg", "Un siamés elegante", gatoTipo));
-                mascotaRepository.save(new Mascota("Cleo", 4, true, "Una persa tranquila y de pelaje suave, ideal para un hogar calmado.", "/assets/mascotas/gato/cleo.jpg", "Una persa tranquila", gatoTipo));
-                mascotaRepository.save(new Mascota("Simba", 2, false, "Un maine coon grande y curioso, le encanta explorar.", "/assets/mascotas/gato/simba.jpg", "Un maine coon curioso", gatoTipo));
+                mascotaRepository.save(new Mascota("Milo", 1, true, "Un siamés elegante y con una personalidad vocal.", "/assets/mascotas/gato/milo.png", "Un siamés elegante", gatoTipo));
+                mascotaRepository.save(new Mascota("Cleo", 4, true, "Una persa tranquila y de pelaje suave, ideal para un hogar calmado.", "/assets/mascotas/gato/cleo.png", "Una persa tranquila", gatoTipo));
+                mascotaRepository.save(new Mascota("Simba", 2, false, "Un maine coon grande y curioso, le encanta explorar.", "/assets/mascotas/gato/simba.png", "Un maine coon curioso", gatoTipo));
             }
 
             if (conejoTipo != null) {
-                mascotaRepository.save(new Mascota("Coco", 1, true, "Un conejo enano adorable y fácil de cuidar.", "/assets/mascotas/conejo/coco.jpg", "Un conejo enano adorable", conejoTipo));
-                mascotaRepository.save(new Mascota("Nieve", 2, true, "Un conejo blanco suave y tranquilo, perfecto para niños.", "/assets/mascotas/conejo/nieve.jpg", "Un conejo blanco suave", conejoTipo));
+                mascotaRepository.save(new Mascota("Coco", 1, true, "Un conejo enano adorable y fácil de cuidar.", "/assets/mascotas/conejo/coco.png", "Un conejo enano adorable", conejoTipo));
+                mascotaRepository.save(new Mascota("Nieve", 2, true, "Un conejo blanco suave y tranquilo, perfecto para niños.", "/assets/mascotas/conejo/nieve.png", "Un conejo blanco suave", conejoTipo));
             }
 
             if (pezTipo != null) {
-                mascotaRepository.save(new Mascota("Nemo", 1, true, "Un pez payaso alegre y activo, ideal para un acuario comunitario.", "/assets/mascotas/pez/nemo.jpg", "Un pez payaso alegre", pezTipo));
-                mascotaRepository.save(new Mascota("Dory", 2, true, "Un pez cirujano azul amigable y curioso.", "/assets/mascotas/pez/dory.jpg", "Un pez cirujano azul amigable", pezTipo));
+                mascotaRepository.save(new Mascota("Nemo", 1, true, "Un pez payaso alegre y activo, ideal para un acuario comunitario.", "/assets/mascotas/pez/nemo.png", "Un pez payaso alegre", pezTipo));
+                mascotaRepository.save(new Mascota("Dory", 2, true, "Un pez cirujano azul amigable y curioso.", "/assets/mascotas/pez/dory.png", "Un pez cirujano azul amigable", pezTipo));
             }
 
             if (roedorTipo != null) {
-                mascotaRepository.save(new Mascota("Jerry", 1, true, "Un hámster dorado juguetón, perfecto para observar.", "/assets/mascotas/roedor/jerry.jpg", "Un hámster dorado juguetón", roedorTipo));
-                mascotaRepository.save(new Mascota("Stuart", 2, true, "Un ratón aventurero y listo.", "/assets/mascotas/roedor/stuart.jpg", "Un ratón aventurero", roedorTipo));
+                mascotaRepository.save(new Mascota("Jerry", 1, true, "Un hámster dorado juguetón, perfecto para observar.", "/assets/mascotas/roedor/jerry.png", "Un hámster dorado juguetón", roedorTipo));
+                mascotaRepository.save(new Mascota("Stuart", 2, true, "Un ratón aventurero y listo.", "/assets/mascotas/roedor/stuart.png", "Un ratón aventurero", roedorTipo));
             }
 
             if (pajaroTipo != null) {
-                mascotaRepository.save(new Mascota("Rio", 2, true, "Un guacamayo colorido y sociable.", "/assets/mascotas/pajaro/rio.jpg", "Un guacamayo colorido", pajaroTipo));
-                mascotaRepository.save(new Mascota("Kiwi", 1, true, "Un periquito parlanchín y fácil de domesticar.", "/assets/mascotas/pajaro/kiwi.jpg", "Un periquito parlanchín", pajaroTipo));
+                mascotaRepository.save(new Mascota("Rio", 2, true, "Un guacamayo colorido y sociable.", "/assets/mascotas/pajaro/rio.png", "Un guacamayo colorido", pajaroTipo));
+                mascotaRepository.save(new Mascota("Kiwi", 1, true, "Un periquito parlanchín y fácil de domesticar.", "/assets/mascotas/pajaro/kiwi.png", "Un periquito parlanchín", pajaroTipo));
             }
 
             if (tortugaTipo != null) {
-                mascotaRepository.save(new Mascota("Sheldon", 10, true, "Una tortuga terrestre sabia y de bajo mantenimiento.", "/assets/mascotas/tortuga/sheldon.jpg", "Una tortuga terrestre sabia", tortugaTipo));
-                mascotaRepository.save(new Mascota("Crush", 50, true, "Una tortuga marina relajada y longeva.", "/assets/mascotas/tortuga/crush.jpg", "Una tortuga marina relajada", tortugaTipo));
+                mascotaRepository.save(new Mascota("Sheldon", 10, true, "Una tortuga terrestre sabia y de bajo mantenimiento.", "/assets/mascotas/tortuga/sheldon.png", "Una tortuga terrestre sabia", tortugaTipo));
+                mascotaRepository.save(new Mascota("Crush", 50, true, "Una tortuga marina relajada y longeva.", "/assets/mascotas/tortuga/crush.png", "Una tortuga marina relajada", tortugaTipo));
             }
 
             if (reptilTipo != null) {
-                mascotaRepository.save(new Mascota("Pascal", 1, true, "Un camaleón curioso y con la habilidad de cambiar de color.", "/assets/mascotas/reptil/pascal.jpg", "Un camaleón curioso", reptilTipo));
-                mascotaRepository.save(new Mascota("Monty", 3, true, "Una serpiente de maíz tranquila y de colores atractivos.", "/assets/mascotas/reptil/monty.jpg", "Una serpiente de maíz tranquila", reptilTipo));
+                mascotaRepository.save(new Mascota("Pascal", 1, true, "Un camaleón curioso y con la habilidad de cambiar de color.", "/assets/mascotas/reptil/pascal.png", "Un camaleón curioso", reptilTipo));
+                mascotaRepository.save(new Mascota("Monty", 3, true, "Una serpiente de maíz tranquila y de colores atractivos.", "/assets/mascotas/reptil/monty.png", "Una serpiente de maíz tranquila", reptilTipo));
             }
 
             if (aracnidoTipo != null) {
-                mascotaRepository.save(new Mascota("Lucas", 1, true, "Una araña saltarina amigable y activa.", "/assets/mascotas/aracnido/lucas.jpg", "Una araña saltarina amigable", aracnidoTipo));
-                mascotaRepository.save(new Mascota("Charlotte", 2, false, "Una araña de jardín inteligente y útil para el control de plagas.", "/assets/mascotas/aracnido/charlotte.jpg", "Una araña de jardín inteligente", aracnidoTipo));
+                mascotaRepository.save(new Mascota("Lucas", 1, true, "Una araña saltarina amigable y activa.", "/assets/mascotas/aracnido/lucas.png", "Una araña saltarina amigable", aracnidoTipo));
+                mascotaRepository.save(new Mascota("Charlotte", 2, false, "Una araña de jardín inteligente y útil para el control de plagas.", "/assets/mascotas/aracnido/charlotte.png", "Una araña de jardín inteligente", aracnidoTipo));
             }
 
             if (insectoTipo != null) {
-                mascotaRepository.save(new Mascota("Mantis", 1, true, "Una mantis religiosa observadora y fascinante.", "/assets/mascotas/insecto/mantis.jpg", "Una mantis religiosa observadora", insectoTipo));
-                mascotaRepository.save(new Mascota("Flynn", 1, true, "Una mariquita con suerte y de colores vibrantes.", "/assets/mascotas/insecto/flynn.jpg", "Una mariquita con suerte", insectoTipo));
+                mascotaRepository.save(new Mascota("Mantis", 1, true, "Una mantis religiosa observadora y fascinante.", "/assets/mascotas/insecto/mantis.png", "Una mantis religiosa observadora", insectoTipo));
+                mascotaRepository.save(new Mascota("Flynn", 1, true, "Una mariquita con suerte y de colores vibrantes.", "/assets/mascotas/insecto/flynn.png", "Una mariquita con suerte", insectoTipo));
             }
 
             if (otrosTipo != null) {
-                mascotaRepository.save(new Mascota("Wilbur", 2, true, "Un cerdo cariñoso e inteligente.", "/assets/mascotas/otros/wilbur.jpg", "Un cerdo cariñoso", otrosTipo));
-                mascotaRepository.save(new Mascota("Daisy", 4, true, "Una vaca tranquila y de buen temperamento.", "/assets/mascotas/otros/daisy.jpg", "Una vaca tranquila", otrosTipo));
-                mascotaRepository.save(new Mascota("Shaun", 1, true, "Una oveja traviesa y juguetona.", "/assets/mascotas/otros/shaun.jpg", "Una oveja traviesa", otrosTipo));
+                mascotaRepository.save(new Mascota("Wilbur", 2, true, "Un cerdo cariñoso e inteligente.", "/assets/mascotas/otros/wilbur.png", "Un cerdo cariñoso", otrosTipo));
+                mascotaRepository.save(new Mascota("Daisy", 4, true, "Una vaca tranquila y de buen temperamento.", "/assets/mascotas/otros/daisy.png", "Una vaca tranquila", otrosTipo));
+                mascotaRepository.save(new Mascota("Shaun", 1, true, "Una oveja traviesa y juguetona.", "/assets/mascotas/otros/shaun.png", "Una oveja traviesa", otrosTipo));
             }
         }
     }
