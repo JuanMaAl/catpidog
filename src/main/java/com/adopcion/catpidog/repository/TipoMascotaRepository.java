@@ -4,7 +4,10 @@ import com.adopcion.catpidog.model.TipoMascota;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface TipoMascotaRepository extends JpaRepository<TipoMascota, Long>{
+import java.util.Optional;
 
+@Repository
+public interface TipoMascotaRepository extends JpaRepository<TipoMascota, Long> {
+
+    Optional<TipoMascota> findByNombre(String nombre);
 }
